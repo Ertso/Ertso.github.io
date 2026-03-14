@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Küçük hatırlatma şu olmadan türkçe karakter koyarsan sayfaya çok komik şeyler oluyor yaşamayan yoktur-->
+    <title>Rejects - The Last Republic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Çaldığım font bizimkini şu şekil yapana kadar -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Css bağlıyorum aramızda frontend nedir bilmeyen cahiller var açıklayayım -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="topbar">
+        <div class="brand">
+            <div class="brand-logo">Rejects</div>
+            <div class="brand-tagline" data-i18n="brand.tagline">C-RPG Studio</div>
+        </div>
+
+        <div class="topbar-right">
+            <nav class="main-nav">
+                <a href="#about" data-i18n="nav.about">About Us</a>
+                <a href="#the-last-republic" data-i18n="nav.game">The Last Republic</a>
+                <a href="#lorepedia" data-i18n="nav.lore">Lorepedia</a>
+                <a href="#press-kit" data-i18n="nav.press">Press Kit</a>
+            </nav>
+
+            <div class="topbar-controls">
+                <div class="lang-switch" aria-label="Language switch">
+                    <button type="button" class="lang-toggle lang-active" data-lang="tr">TR</button>
+                    <span class="lang-divider">/</span>
+                    <button type="button" class="lang-toggle" data-lang="en">ENG</button>
+                </div>
+
+                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+                    <span class="theme-icon">☀</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- HERO çünkü dispatch çok iyi -->
+    <section aria-labelledby="hero-title">
+        <div class="hero">
+            <div>
+                <div class="hero-kicker" data-i18n="hero.kicker">Independent C-RPG Studio</div>
+                <h1 class="hero-title" id="hero-title">The Last Republic</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    A story-driven isometric C-RPG set in the dying days of a fractured republic.
+                    Choices cut deep, alliances are fragile, and every victory leaves scars.
+                </p>
+                <div class="hero-cta">
+                    <a href="#the-last-republic" class="btn btn-primary" data-i18n="hero.cta.game">Explore the Game</a>
+                    <a href="#press-kit" class="btn btn-ghost" data-i18n="hero.cta.press">Press Kit</a>
+                </div>
+                <div class="hero-meta">
+                    <span data-i18n="hero.meta">PC • C-RPG • In Development</span>
+                </div>
+            </div>
+            <div class="hero-art">
+                <div class="hero-art-card">
+                    <div class="hero-art-tag" data-i18n="hero.keyart.tag">Key Art Placeholder</div>
+                    <div class="hero-art-title" data-i18n="hero.keyart.title">Art or Logo idk</div>
+                    <div class="hero-art-placeholder" data-label="Preview">
+                        16:9 Art / Logo Area
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="about" aria-labelledby="about-title">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker" data-i18n="about.kicker">About Us</div>
+                <h2 class="section-title" id="about-title" data-i18n="about.title">We are Rejects</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">
+                    Short studio introduction. Keep it punchy and focused on your vision for C-RPGs.
+                </p>
+            </div>
+
+            <div class="two-column">
+                <div class="body-text">
+                    <!-- Buraya yazacaz bişiler -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat erat id
+                        dictum dapibus. Donec eget ex lectus. Sed a bibendum nisl. Praesent feugiat, lectus
+                        a vestibulum dictum, neque tortor porta tellus, sed convallis justo sapien nec arcu.
+                    </p>
+                    <p>
+                        Nam tincidunt justo non velit hendrerit, id facilisis lacus pulvinar. Suspendisse
+                        eu finibus justo. Integer tristique libero a diam ultrices, sed fermentum ipsum
+                        viverra. Integer sodales, massa id laoreet maximus, sem tellus tincidunt massa,
+                        id vulputate magna nulla non neque.
+                    </p>
+                </div>
+                <div class="media-grid">
+                    <div class="media-placeholder" data-label="Studio Photo">
+                        Studio Image Placeholder
+                    </div>
+                    <div class="media-placeholder" data-label="Team">
+                        Team Photo Placeholder
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE LAST REPUBLIC -->
+    <section id="the-last-republic" aria-labelledby="tlr-title">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker" data-i18n="game.kicker">The Last Republic</div>
+                <h2 class="section-title" id="tlr-title" data-i18n="game.title">
+                    A choice-driven C-RPG in a collapsing world
+                </h2>
+                <p class="section-subtitle" data-i18n="game.subtitle">
+                    Short description of the setting, core fantasy and what makes the game unique.
+                </p>
+            </div>
+
+            <div class="two-column">
+                <div class="body-text">
+                    <!-- Oyun açıklaması-->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet lectus
+                        sed ante condimentum tincidunt. Phasellus vitae accumsan lorem. Pellentesque
+                        commodo malesuada nibh, id suscipit lacus dictum quis. Praesent aliquam interdum
+                        leo, at laoreet lacus condimentum at.
+                    </p>
+                    <p>
+                        Curabitur ullamcorper lectus ut nibh lacinia mollis. In viverra sapien vel
+                        consectetur tincidunt. Mauris molestie nisl vel ante pellentesque, ut eleifend
+                        erat sodales. Cras et augue vitae velit malesuada gravida. Vivamus tempus
+                        imperdiet sapien, in suscipit arcu pulvinar non.
+                    </p>
+                </div>
+                <div class="media-grid">
+                    <div class="media-placeholder" data-label="Screenshots">
+                        Screenshot Placeholder
+                    </div>
+                    <div class="media-placeholder" data-label="Screenshots">
+                        Screenshot Placeholder
+                    </div>
+                    <div class="media-placeholder" data-label="Trailer">
+                        Trailer Video Placeholder
+                    </div>
+                    <div class="media-placeholder" data-label="Gameplay">
+                        Gameplay Video Placeholder
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOREPEDIA -->
+    <section id="lorepedia" aria-labelledby="lore-title">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker" data-i18n="lore.kicker">Lorepedia</div>
+                <h2 class="section-title" id="lore-title" data-i18n="lore.title">World of The Last Republic</h2>
+                <p class="section-subtitle" data-i18n="lore.subtitle">
+                    Deep-dive into the setting, factions and history of your world. Internal sub-navigation
+                    below, just like a mini topbar for Lorepedia.
+                </p>
+            </div>
+
+            <div class="lore-layout">
+                <!-- Lorepedia içi topbar -->
+                <nav class="lore-topbar" aria-label="Lorepedia navigation">
+                    <a href="#countries" data-i18n="lore.nav.countries">Countries</a>
+                    <a href="#cultures" data-i18n="lore.nav.cultures">Cultures</a>
+                    <a href="#religions" data-i18n="lore.nav.religions">Religions</a>
+                    <a href="#timeline" data-i18n="lore.nav.timeline">Timeline of Events</a>
+                </nav>
+
+                <div>
+                    <!-- Carladinea ve diğerleri -->
+                    <article id="countries" class="lore-section">
+                        <div class="lore-label" data-i18n="lore.label">Lorepedia</div>
+                        <h3 data-i18n="lore.countries.title">Countries</h3>
+
+                        <!-- Genel giriş metni, istersen sonra i18n'e de alırız -->
+                        <div class="body-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor
+                                rhoncus est, a auctor magna vehicula ut. Suspendisse potenti. Etiam
+                                id luctus neque. Duis facilisis velit a orci pretium posuere.
+                            </p>
+                            <p>
+                                Integer sollicitudin, libero vel scelerisque rhoncus, justo justo
+                                rhoncus enim, vulputate ultricies lectus purus vel massa. Aliquam erat
+                                volutpat. Aliquam semper, ligula ut volutpat cursus, ante velit
+                                consequat elit, at auctor ligula leo ut ex.
+                            </p>
+                        </div>
+
+                        <!-- COUNTRIES GRID START -->
+                        <div class="countries-grid">
+                            <!-- Republic of Tursiya -->
+                            <div class="country-card">
+                                <div class="country-flag-placeholder" aria-label="Republic of Tursiya flag">
+                                    <!-- Sonra buraya <img> ile gerçek bayrak gelsin -->
+                                    
+                                <img src="flags/TursiyaFlag.jpeg" alt="Republic of Tursiya flag">
+                                </div>
+                                <div class="country-body">
+                                    <h4 class="country-name" data-i18n="lore.countries.tursiya.name">
+                                        Republic of Tursiya
+                                    </h4>
+                                    <p class="country-description" data-i18n="lore.countries.tursiya.desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus
+                                        eget sapien pulvinar pellentesque. Integer a luctus ipsum.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Carladinean Empire -->
+                            <div class="country-card">
+                                <div class="country-flag-placeholder" aria-label="Carladinean Empire flag">
+                                    <img src="flags/Carladineanflag.jpeg" alt="Carladinean Empire flag">
+                                </div>
+                                <div class="country-body">
+                                    <h4 class="country-name" data-i18n="lore.countries.carladine.name">
+                                        Carladinean Empire
+                                    </h4>
+                                    <p class="country-description" data-i18n="lore.countries.carladine.desc">
+                                        Goated State frfr 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Norden Despotate -->
+                            <div class="country-card">
+                                <div class="country-flag-placeholder" aria-label="Norden Despotate flag">
+                                    Flag
+                                </div>
+                                <div class="country-body">
+                                    <h4 class="country-name" data-i18n="lore.countries.norden.name">
+                                        Norden Despotate
+                                    </h4>
+                                    <p class="country-description" data-i18n="lore.countries.norden.desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
+                                        enim vitae nibh venenatis tincidunt. Sed consequat justo in hendrerit
+                                        hendrerit.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Panarthean Commonwealth -->
+                            <div class="country-card">
+                                <div class="country-flag-placeholder" aria-label="Panarthean Commonwealth flag">
+                                    <img src="flags/panardeneme.png" alt="Panarthean Commonwealth flag">
+                                </div>
+                                <div class="country-body">
+                                    <h4 class="country-name" data-i18n="lore.countries.panarthean.name">
+                                        Panarthean Commonwealth
+                                    </h4>
+                                    <p class="country-description" data-i18n="lore.countries.panarthean.desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at
+                                        enim sit amet quam dictum dictum. Aliquam ultricies metus sit amet
+                                        bibendum luctus.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Tolonradi Tribes -->
+                            <div class="country-card">
+                                <div class="country-flag-placeholder" aria-label="Tolonradi Tribes flag">
+                                    Flag
+                                </div>
+                                <div class="country-body">
+                                    <h4 class="country-name" data-i18n="lore.countries.tolonradi.name">
+                                        Tolonradi Tribes
+                                    </h4>
+                                    <p class="country-description" data-i18n="lore.countries.tolonradi.desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+                                        metus ut sem ullamcorper feugiat. Nulla facilisi. Sed porttitor
+                                        risus et lectus vehicula faucibus.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Irewian Stratocracy -->
+                            <div class="country-card">
+                                <div class="country-flag-placeholder" aria-label="Irewian Stratocracy flag">
+                                    Flag
+                                </div>
+                                <div class="country-body">
+                                    <h4 class="country-name" data-i18n="lore.countries.irewian.name">
+                                        Irewian Stratocracy
+                                    </h4>
+                                    <p class="country-description" data-i18n="lore.countries.irewian.desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        faucibus justo non erat vehicula, vitae fermentum ligula blandit.
+                                        Phasellus id aliquet nulla.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Cronian Confederation -->
+                            <div class="country-card">
+                                <div class="country-flag-placeholder" aria-label="Cronian Confederation flag">
+                                    Flag
+                                </div>
+                                <div class="country-body">
+                                    <h4 class="country-name" data-i18n="lore.countries.cronian.name">
+                                        Cronian Confederation
+                                    </h4>
+                                    <p class="country-description" data-i18n="lore.countries.cronian.desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                                        venenatis lacus a orci posuere, non pharetra nibh facilisis. Donec
+                                        a cursus enim.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- COUNTRIES GRID END -->
+                    </article>
+
+                    <!-- Kültür -->
+                    <article id="cultures" class="lore-section">
+                        <div class="lore-label" data-i18n="lore.label">Lorepedia</div>
+                        <h3 data-i18n="lore.cultures.title">Cultures</h3>
+                        <div class="body-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                                ultricies sollicitudin elit, vitae consequat velit finibus ut. Maecenas
+                                varius, libero nec dictum faucibus, purus velit bibendum sapien, at
+                                rhoncus neque justo vitae magna.
+                            </p>
+                            <p>
+                                Cras mattis, ex et rhoncus ullamcorper, justo arcu volutpat lectus,
+                                a vehicula est leo quis elit. Integer sagittis sagittis nibh, eget
+                                aliquam libero ultricies non.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Allahlar -->
+                    <article id="religions" class="lore-section">
+                        <div class="lore-label" data-i18n="lore.label">Lorepedia</div>
+                        <h3 data-i18n="lore.religions.title">Religions</h3>
+                        <div class="body-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet
+                                nibh vel tortor porta vehicula. Integer a augue sed tortor laoreet
+                                semper. Donec nibh sem, pellentesque non quam vel, ultrices efficitur
+                                nibh.
+                            </p>
+                            <p>
+                                Phasellus convallis, risus quis feugiat porttitor, magna massa
+                                fermentum ante, nec convallis ante odio quis enim. Quisque porta
+                                at lorem quis eleifend.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Timeline -->
+                    <article id="timeline" class="lore-section">
+                        <div class="lore-label" data-i18n="lore.label">Lorepedia</div>
+                        <h3 data-i18n="lore.timeline.title">Timeline of Events</h3>
+                        <div class="body-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+                                tincidunt felis, at scelerisque lacus. Curabitur sit amet velit
+                                nisl. Integer fringilla leo vel gravida porta.
+                            </p>
+                            <p>
+                                Fusce et dictum tortor, sed ultricies eros. Sed varius hendrerit
+                                sem, id facilisis odio sodales sit amet. Integer vitae turpis
+                                vehicula, maximus felis in, finibus lacus.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRESS KIT -->
+    <section id="press-kit" aria-labelledby="press-title">
+        <div class="section-inner">
+            <div class="section-header">
+                <div class="section-kicker" data-i18n="press.kicker">Press Kit</div>
+                <h2 class="section-title" id="press-title" data-i18n="press.title">
+                    The Last Republic — Press Kit
+                </h2>
+                <p class="section-subtitle" data-i18n="press.subtitle">
+                    All assets, facts and contact information you need if you’re writing about The Last Republic.
+                </p>
+            </div>
+
+            <div class="press-grid">
+                <!-- Sol blok: kısa bilgiler -->
+                <div class="press-card">
+                    <h3 data-i18n="press.quickfacts.title">Quick Facts</h3>
+                    <dl class="press-meta">
+                        <dt data-i18n="press.quickfacts.gameTitleLabel">Game Title</dt>
+                        <dd data-i18n="press.quickfacts.gameTitleValue">The Last Republic</dd>
+
+                        <dt data-i18n="press.quickfacts.developerLabel">Developer</dt>
+                        <dd data-i18n="press.quickfacts.developerValue">Rejects</dd>
+
+                        <dt data-i18n="press.quickfacts.genreLabel">Genre</dt>
+                        <dd data-i18n="press.quickfacts.genreValue">Isometric, Party-based C-RPG</dd>
+
+                        <dt data-i18n="press.quickfacts.platformsLabel">Platforms</dt>
+                        <dd data-i18n="press.quickfacts.platformsValue">PC (Steam, others TBA)</dd>
+
+                        <dt data-i18n="press.quickfacts.releaseLabel">Release Date</dt>
+                        <dd data-i18n="press.quickfacts.releaseValue">TBA</dd>
+
+                        <dt data-i18n="press.quickfacts.websiteLabel">Website</dt>
+                        <dd>https://rejects.com</dd>
+
+                        <dt data-i18n="press.quickfacts.contactLabel">Contact</dt>
+                        <dd>asd@asd.com</dd>
+                    </dl>
+                </div>
+
+                <!-- Sağ blok: açıklamalar & asset linkleri -->
+                <div>
+                    <div class="press-block">
+                        <h4 data-i18n="press.shortdesc.title">Short Description</h4>
+                        <p class="body-text" data-i18n="press.shortdesc.body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in dui
+                            ipsum. Suspendisse finibus non velit at tincidunt. Donec efficitur, lorem
+                            sit amet volutpat dapibus, ante enim viverra magna, at iaculis ligula nulla
+                            sit amet orci.
+                        </p>
+                    </div>
+
+                    <div class="press-block">
+                        <h4 data-i18n="press.longdesc.title">Long Description</h4>
+                        <p class="body-text" data-i18n="press.longdesc.body1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus
+                            felis in ligula finibus, sed efficitur lorem tristique. Mauris et hendrerit
+                            dui. Aliquam lacinia suscipit mi, sed hendrerit urna interdum eget. Nulla
+                            fermentum, mi eget vehicula tempor, ex lacus tincidunt lorem, vel varius
+                            ligula neque et enim.
+                        </p>
+                        <p class="body-text" data-i18n="press.longdesc.body2">
+                            Donec nec pulvinar lorem. Fusce commodo eros justo, id dapibus ligula
+                            tempus quis. Nam sit amet ante sit amet lorem sagittis elementum vitae
+                            in nulla. Aenean id bibendum arcu. Integer pellentesque malesuada nibh,
+                            vitae dignissim mi viverra sed.
+                        </p>
+                    </div>
+
+                    <div class="press-block">
+                        <h4 data-i18n="press.features.title">Key Features</h4>
+                        <ul class="press-list">
+                            <li data-i18n="press.features.f1">Feature bullet lorem ipsum dolor sit amet.</li>
+                            <li data-i18n="press.features.f2">Another strong selling point listed here.</li>
+                            <li data-i18n="press.features.f3">Deep C-RPG systems, meaningful choices, etc.</li>
+                            <li data-i18n="press.features.f4">List 4–6 bullet points total.</li>
+                        </ul>
+                    </div>
+
+                    <div class="press-block">
+                        <h4 data-i18n="press.assets.title">Assets</h4>
+                        <p class="body-text" data-i18n="press.assets.body">
+                            ZIP links are placeholders — replace them with real files / folders when ready.
+                        </p>
+                        <div class="asset-buttons">
+                            <a href="#" class="asset-link" data-i18n="press.assets.logos">Logos (ZIP)</a>
+                            <a href="#" class="asset-link" data-i18n="press.assets.keyart">Key Art (ZIP)</a>
+                            <a href="#" class="asset-link" data-i18n="press.assets.screens">Screenshots (ZIP)</a>
+                            <a href="#" class="asset-link" data-i18n="press.assets.trailer">Trailer (YouTube)</a>
+                        </div>
+                    </div>
+
+                    <div class="press-block">
+                        <h4 data-i18n="press.links.title">Additional Links</h4>
+                        <ul class="press-list">
+                            <li data-i18n="press.links.steam">Steam page (link when available)</li>
+                            <li data-i18n="press.links.discord">Official Discord server</li>
+                            <li data-i18n="press.links.socials">Twitter / X, Instagram, etc.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <span data-i18n="footer.copy">© 2026 Rejects</span>
+        <span data-i18n="footer.trademarks">All trademarks referenced are the property of their respective owners.</span>
+    </div>
+</footer>
+
+<!-- AMELE İŞİ BURADA  -->
+<script>
+    const translations = {
+        tr: {
+            "brand.tagline": "C-RPG Stüdyosu",
+
+            "nav.about": "Hakkımızda",
+            "nav.game": "Son Cumhuriyet",
+            "nav.lore": "Lorepedia",
+            "nav.press": "Basın Kiti",
+
+            "hero.kicker": "Bağımsız C-RPG Stüdyosu",
+            "hero.subtitle": "Parçalanmış bir cumhuriyetin son günlerinde geçen, hikâye odaklı izometrik bir C-RPG. Seçimler derin izler bırakır, ittifaklar kırılgandır ve her zafer bir bedel ister.",
+            "hero.cta.game": "Oyunu Keşfet",
+            "hero.cta.press": "Basın Kiti",
+            "hero.meta": "PC • C-RPG • Geliştirme Aşamasında",
+            "hero.keyart.tag": "Ana Görsel Placeholder",
+            "hero.keyart.title": "Art veya logo buraya",
+
+            "about.kicker": "Hakkımızda",
+            "about.title": "Biz Rejects'iz", //WE ARE CHARLIE KIIIIIIIIIRRRRRRRRK
+            "about.subtitle": "Şirkeyi ve C-RPG vizyonunu vurgulayan kısa bir yazı",
+
+            "game.kicker": "The Last Republic",
+            "game.title": "Çöken bir dünyada seçim odaklı bir C-RPG",
+            "game.subtitle": "eveveveveveve",
+
+            "lore.kicker": "Lorepedia",
+            "lore.title": "The Last Republic Dünyası",
+            "lore.subtitle": "slm cnm ben amcanım.",
+
+            "lore.nav.countries": "Ülkeler",
+            "lore.nav.cultures": "Kültürler",
+            "lore.nav.religions": "Dinler",
+            "lore.nav.timeline": "Timelapse veya Timeline ın türkçesi ne amk",
+
+            "lore.label": "Lorepedia",
+            "lore.countries.title": "Ülkeler",
+            "lore.cultures.title": "Kültürler",
+            "lore.religions.title": "Dinler",
+            "lore.timeline.title": "Timelapse veya Timeline ın türkçesi ne amk",
+
+            /* Countries – TR */
+            "lore.countries.tursiya.name": "Tursiya Cumhuriyeti",
+            "lore.countries.tursiya.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus eget sapien pulvinar pellentesque. Integer a luctus ipsum.",
+
+            "lore.countries.carladine.name": "Carladine İmparatorluğu",
+            "lore.countries.carladine.desc": "Keçilenmiş Devlet gi gi",
+
+            "lore.countries.norden.name": "Norden Despotluğu",
+            "lore.countries.norden.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at enim vitae nibh venenatis tincidunt. Sed consequat justo in hendrerit hendrerit.",
+
+            "lore.countries.panarthean.name": "Panarthean Milletler Topluluğu",
+            "lore.countries.panarthean.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at enim sit amet quam dictum dictum. Aliquam ultricies metus sit amet bibendum luctus.",
+
+            "lore.countries.tolonradi.name": "Tolonradi Kabileleri",
+            "lore.countries.tolonradi.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in metus ut sem ullamcorper feugiat. Nulla facilisi. Sed porttitor risus et lectus vehicula faucibus.",
+
+            "lore.countries.irewian.name": "Irewian Stratokrasisi",
+            "lore.countries.irewian.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus justo non erat vehicula, vitae fermentum ligula blandit. Phasellus id aliquet nulla.",
+
+            "lore.countries.cronian.name": "Cronian Konfederasyonu",
+            "lore.countries.cronian.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis lacus a orci posuere, non pharetra nibh facilisis. Donec a cursus enim.",
+
+            /* Press Kit TR */
+            "press.kicker": "Basın Kiti",
+            "press.title": "The Last Republic — Basın Kiti",
+            "press.subtitle": "The Last Republic hakkında haber yaparken ihtiyaç duyacağınız temel bilgi ve materyaller.",
+
+            "press.quickfacts.title": "Hızlı Bilgiler",
+            "press.quickfacts.gameTitleLabel": "Oyun Adı",
+            "press.quickfacts.gameTitleValue": "Son Cumhuriyet",
+            "press.quickfacts.developerLabel": "Geliştirici",
+            "press.quickfacts.developerValue": "Rejects",
+            "press.quickfacts.genreLabel": "Tür",
+            "press.quickfacts.genreValue": "İzometrik, Parti Tabanlı C-RPG",
+            "press.quickfacts.platformsLabel": "Platformlar",
+            "press.quickfacts.platformsValue": "PC (Steam, diğer)",
+            "press.quickfacts.releaseLabel": "Çıkış Tarihi",
+            "press.quickfacts.releaseValue": "Duyurulacak",
+            "press.quickfacts.websiteLabel": "Web Sitesi",
+            "press.quickfacts.contactLabel": "İletişim",
+
+            "press.shortdesc.title": "Kısa Açıklama",
+            "press.shortdesc.body": "The Last Republic, siyasi entrika ve kişisel trajedilerin iç içe geçtiği, oyuncu seçimlerine yoğun şekilde tepki veren karanlık bir C-RPG deneyimi sunar.",
+
+            "press.longdesc.title": "Uzun Açıklama",
+            "press.longdesc.body1": "Bunu yazan tosun okuyana kosun",
+            "press.longdesc.body2": "Cumbat, karakter ilerlemesi, dallanan diyaloglar ve reaktif dünya vsvs",
+
+            "press.features.title": "Öne Çıkan Özellikler",
+            "press.features.f1": "Karmaşık siyasi ilişkiler ve fraksiyon temelli seçimler.",
+            "press.features.f2": "Parti tabanlı taktiksel savaş ve derin karakter gelişimi.",
+            "press.features.f3": "Oyuncu kararlarına kalıcı şekilde tepki veren, dallanan görevler.",
+            "press.features.f4": "Zengin lore ile desteklenen, olgun ve karanlık bir ton.",
+
+            "press.assets.title": "Varlıklar (Assets)",
+            "press.assets.body": "Bu bağlantılar şu an placeholder",
+            "press.assets.logos": "Logolar (ZIP)",
+            "press.assets.keyart": "Key Art (ZIP)",
+            "press.assets.screens": "Ekran Görüntüleri (ZIP)",
+            "press.assets.trailer": "Fragman (YouTube)",
+
+            "press.links.title": "Ek Bağlantılar",
+            "press.links.steam": "Steam sayfası (hazır olduğunda link ver)",
+            "press.links.discord": "Resmî Discord sunucusu",
+            "press.links.socials": "Twitter / X, Instagram vb.",
+
+            "footer.copy": "© 2026 Rejects",
+            "footer.trademarks": "Bahsi geçen tüm ticari markalar ilgili sahiplerine aittir."
+        },
+        en: {
+            "brand.tagline": "C-RPG Studio",
+
+            "nav.about": "About Us",
+            "nav.game": "The Last Republic",
+            "nav.lore": "Lorepedia",
+            "nav.press": "Press Kit",
+
+            "hero.kicker": "Independent C-RPG Studio",
+            "hero.subtitle": "A story-driven isometric C-RPG set in the dying days of a fractured republic. Choices cut deep, alliances are fragile, and every victory leaves scars.",
+            "hero.cta.game": "Explore the Game",
+            "hero.cta.press": "Press Kit",
+            "hero.meta": "PC • C-RPG • In Development",
+            "hero.keyart.tag": "Key Art Placeholder",
+            "hero.keyart.title": "Art or logo here",
+
+            "about.kicker": "About Us",
+            "about.title": "We are Rejects",
+            "about.subtitle": "Short studio introduction.",
+
+            "game.kicker": "The Last Republic",
+            "game.title": "A choice-driven C-RPG in a collapsing world",
+            "game.subtitle": "Short description of the setting, core fantasy and what makes the game unique.",
+
+            "lore.kicker": "Lorepedia",
+            "lore.title": "World of The Last Republic; Tura",
+            "lore.subtitle": "Deep-dive into the setting, factions and history of your world. Internal sub-navigation below, just like a mini topbar for Lorepedia.",
+
+            "lore.nav.countries": "Countries",
+            "lore.nav.cultures": "Cultures",
+            "lore.nav.religions": "Religions",
+            "lore.nav.timeline": "Timeline of Events",
+
+            "lore.label": "Lorepedia",
+            "lore.countries.title": "Countries",
+            "lore.cultures.title": "Cultures",
+            "lore.religions.title": "Religions",
+            "lore.timeline.title": "Timeline of Events",
+
+             /* Countries – EN */
+            "lore.countries.tursiya.name": "Republic of Tursiya",
+            "lore.countries.tursiya.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus eget sapien pulvinar pellentesque. Integer a luctus ipsum.",
+
+            "lore.countries.carladine.name": "Carladinean Empire",
+            "lore.countries.carladine.desc": "Goated State frfr",
+
+            "lore.countries.norden.name": "Norden Despotate",
+            "lore.countries.norden.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at enim vitae nibh venenatis tincidunt. Sed consequat justo in hendrerit hendrerit.",
+
+            "lore.countries.panarthean.name": "Panarthean Commonwealth",
+            "lore.countries.panarthean.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at enim sit amet quam dictum dictum. Aliquam ultricies metus sit amet bibendum luctus.",
+
+            "lore.countries.tolonradi.name": "Tolonradi Tribes",
+            "lore.countries.tolonradi.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in metus ut sem ullamcorper feugiat. Nulla facilisi. Sed porttitor risus et lectus vehicula faucibus.",
+
+            "lore.countries.irewian.name": "Irewian Stratocracy",
+            "lore.countries.irewian.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus justo non erat vehicula, vitae fermentum ligula blandit. Phasellus id aliquet nulla.",
+
+            "lore.countries.cronian.name": "Cronian Confederation",
+            "lore.countries.cronian.desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis lacus a orci posuere, non pharetra nibh facilisis. Donec a cursus enim.",
+
+            /* Press Kit EN */
+            "press.kicker": "Press Kit",
+            "press.title": "The Last Republic — Press Kit",
+            "press.subtitle": "All assets, facts and contact information you need if you are writing about The Last Republic.",
+
+            "press.quickfacts.title": "Quick Facts",
+            "press.quickfacts.gameTitleLabel": "Game Title",
+            "press.quickfacts.gameTitleValue": "The Last Republic",
+            "press.quickfacts.developerLabel": "Developer",
+            "press.quickfacts.developerValue": "Rejects",
+            "press.quickfacts.genreLabel": "Genre",
+            "press.quickfacts.genreValue": "Isometric, Party-based C-RPG",
+            "press.quickfacts.platformsLabel": "Platforms",
+            "press.quickfacts.platformsValue": "PC (Steam, others)",
+            "press.quickfacts.releaseLabel": "Release Date",
+            "press.quickfacts.releaseValue": "TBA",
+            "press.quickfacts.websiteLabel": "Website",
+            "press.quickfacts.contactLabel": "Contact",
+
+            "press.shortdesc.title": "Short Description",
+            "press.shortdesc.body": "The Last Republic is a dark C-RPG focused on political intrigue and personal tragedy, reacting heavily to your choices and the alliances you forge.",
+
+            "press.longdesc.title": "Long Description",
+            "press.longdesc.body1": "PLACEHOLDER Long-form description: the history of the republic, the player’s role, the core gameplay systems and the overall tone.",
+            "press.longdesc.body2": "PLACEHOLDER Go into more detail about combat, character progression, branching quests and how the world reacts to player decisions.",
+
+            "press.features.title": "Key Features",
+            "press.features.f1": "Complex political relationships and faction-driven choices.",
+            "press.features.f2": "Party-based tactical combat and deep character building.",
+            "press.features.f3": "Branching quests that react meaningfully to player decisions.",
+            "press.features.f4": "A mature, dark tone supported by rich lore.",
+
+            "press.assets.title": "Assets",
+            "press.assets.body": "These links are placeholders",
+            "press.assets.logos": "Logos (ZIP)",
+            "press.assets.keyart": "Key Art (ZIP)",
+            "press.assets.screens": "Screenshots (ZIP)",
+            "press.assets.trailer": "Trailer (YouTube)",
+
+            "press.links.title": "Additional Links",
+            "press.links.steam": "Steam page (link when available)",
+            "press.links.discord": "Official Discord server",
+            "press.links.socials": "Twitter / X, Instagram, etc.",
+
+            "footer.copy": "© 2026 Rejects",
+            "footer.trademarks": "All trademarks referenced are the property of their respective owners."
+        }
+    };
+
+    //Base TR çünkü ATATÜRK ATATÜRK ATATÜÜÜRK
+    let currentLang = "tr";
+
+    function applyLanguage(lang) {
+        currentLang = lang;
+        document.documentElement.lang = lang;
+
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+            const key = el.getAttribute("data-i18n");
+            const value = translations[lang][key];
+            if (value) {
+                el.textContent = value;
+            }
+        });
+
+        document.querySelectorAll(".lang-toggle").forEach(btn => {
+            if (btn.dataset.lang === lang) {
+                btn.classList.add("lang-active");
+            } else {
+                btn.classList.remove("lang-active");
+            }
+        });
+    }
+
+    document.querySelectorAll(".lang-toggle").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const lang = btn.dataset.lang || "tr";
+            applyLanguage(lang);
+        });
+    });
+
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = themeToggle.querySelector(".theme-icon");
+
+    function setTheme(theme) {
+        document.body.setAttribute("data-theme", theme);
+        const isDark = theme === "dark";
+        themeToggle.setAttribute("aria-pressed", isDark ? "true" : "false");
+        themeIcon.textContent = isDark ? "🌙" : "☀";
+    }
+
+    themeToggle.addEventListener("click", () => {
+        const current = document.body.getAttribute("data-theme") || "light";
+        const next = current === "light" ? "dark" : "light";
+        setTheme(next);
+    });
+
+    applyLanguage(currentLang);
+
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setTheme(prefersDark ? "dark" : "light");
+</script>
+
+</body>
+</html>
